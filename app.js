@@ -7,6 +7,7 @@
    const sayHello = require('./greetings');
    const  math =  require('./math');
    const lodash = require('lodash');
+const { error } = require('console');
 
     // fs.readFile('example.txt', 'utf8', (err, data) => {
     // if(err) {
@@ -78,7 +79,87 @@
    //    console.error('Error', err);
    // })
 
+   // const  writableStream = fs.createWriteStream('output2.txt')
+   // writableStream.write('Hello, ')
+   // writableStream.write('World')
+   // writableStream.end()
+   // writableStream.on('finish', () => {
+   //    console.log('Finished writing');
+   // })
 
+   // const readableStream = fs.createReadStream('example.txt');
+   // const writableStream = fs.createWriteStream('example-output.txt');
+   // readableStream.pipe(writableStream);
+   // writableStream.on('finish',() => {
+   //    console.log('File  Copied  Successfully');  
+   // })
+
+   // const readline  =  require('readline');
+   // const readableStream = fs.createReadStream('example.txt')
+   // const  rl = readline.createInterface({input:readableStream})
+   // rl.on('line', (line) => {
+   //    console.log('Line:', line);
+   // })
+   // rl.on('close', () =>{
+   //    console.log('Finished  Processing the  file');  
+   // })
+
+// fs.mkdir('newDirectory', (err) => {
+//    if(err){
+//       return console.error('Error Creating directory:', err)
+//    }
+//    console.log('Directory  Created Successfully');
+// })
+
+// fs.mkdirSync('newDirectory2')
+// console.log('Directory Created Successfully');
+
+// fs.readdir('./',(err, files) => {
+//    if(err){
+//      return console.err('Error reading the  directory:', err)
+//    }
+//    console.log('Directory Content', files)
+// })
+
+// const files = fs.readdirSync('./')
+// console.log('Directory  Content',files);
+
+// const  dirName =  'newDirectory4'
+// if(fs.existsSync(dirName)){
+//   console.log('Directory Exists'); 
+// }else{
+//    console.log('Directory  dooes  not exist');
+// }
+
+
+// fs.rm('newDirectory2',{recursive: true}, (err) => {
+//    if(err){
+//       return console.error('Error removing directory:', err)
+//    }
+//    console.log('Directory removed successfully');
+// })
+
+// fs.rename('folder1', 'folder2', (err) => {
+//    if(err) {
+//       return console.error('Error  renaming  directory', err);
+//    }
+//    console.log('Directory renamed successfully');  
+// });
+
+// fs.stat('example.txt', (err, stats) =>{
+//    if(err){
+//      return console.error(err);  
+//    }
+//    console.log('Directory  stats:', stats);
+//    console.log('is directory:', stats.isDirectory());    
+// })
+
+// fs.watch('./', (eventType, filename) => {
+//    console.log(`Event: ${eventType}`);
+//    if(filename){
+//       console.log(`Filename: ${filename}`);    
+//    }
+// })
 
 
 
